@@ -33,7 +33,7 @@ pub fn consume<R: Read>(context: &mut Context<R>) -> Result<Metadata> {
                 "name" => {
                     metadata.name = Some(string::consume(context, "name")?);
                 }
-                "description" => {
+                "desc" => {
                     metadata.description = Some(string::consume(context, "description")?);
                 }
                 "author" => {
