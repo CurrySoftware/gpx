@@ -34,7 +34,7 @@ pub fn consume<R: Read>(context: &mut Context<R>) -> Result<Metadata> {
                     metadata.name = Some(string::consume(context, "name")?);
                 }
                 "desc" => {
-                    metadata.description = Some(string::consume(context, "description")?);
+                    metadata.description = Some(string::consume(context, "desc")?);
                 }
                 "author" => {
                     metadata.author = Some(person::consume(context, "author")?);
